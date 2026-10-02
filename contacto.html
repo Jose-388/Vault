@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Vault Tech</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ENCABEZADO REUTILIZADO -->
+    <header class="navbar">
+        <div class="logo-container">
+            <img src="https://via.placeholder.com/50" alt="Logo Vault" class="logo">
+            <span class="brand-title">Vault Tech</span>
+        </div>
+        <nav>
+    <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="conferencias.html">Conferencias</a></li>
+        <li><a href="registro.html">Registro</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+</nav>
+    </header>
+
+    <!-- SECCIÓN DE CONTACTO -->
+    <main class="page-container">
+        <section class="page-header">
+            <h1>Contáctanos</h1>
+            <p>¿Tienes alguna duda sobre las conferencias o tu registro? Envíanos un mensaje.</p>
+        </section>
+
+        <section class="contact-wrapper">
+            <form id="form-contacto" class="contact-form">
+                <div class="form-group">
+                    <label for="c-nombre">Nombre Completo</label>
+                    <input type="text" id="c-nombre" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="c-email">Correo Electrónico</label>
+                    <input type="email" id="c-email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="c-asunto">Asunto</label>
+                    <input type="text" id="c-asunto" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="c-mensaje">Mensaje</label>
+                    <textarea id="c-mensaje" rows="5" required></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">Enviar Mensaje</button>
+            </form>
+
+            <div class="contact-info">
+                <h3>Información de Evento</h3>
+                <p><strong>Lugar:</strong> Centro de Convenciones Tecnológicas</p>
+                <p><strong>Soporte:</strong> soporte@vault-tech.com</p>
+                <p><strong>Teléfono:</strong> +1 (555) 019-2834</p>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

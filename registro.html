@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - Vault Tech</title>
+   <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ENCABEZADO REUTILIZADO -->
+    <header class="navbar">
+        <div class="logo-container">
+            <img src="https://via.placeholder.com/50" alt="Logo Vault" class="logo">
+            <span class="brand-title">Vault Tech</span>
+        </div>
+        <nav>
+    <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="conferencias.html">Conferencias</a></li>
+        <li><a href="registro.html">Registro</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+</nav>
+    </header>
+
+    <!-- FORMULARIO DE REGISTRO -->
+    <main class="page-container">
+        <section class="page-header">
+            <h1>Registro de Participantes</h1>
+            <p>Asegura tu lugar en el evento tecnológico más importante del año.</p>
+        </section>
+
+        <div id="mensaje-exito" class="alert-success" style="display: none;">
+            ¡Registro exitoso! Te hemos enviado la confirmación a tu correo.
+        </div>
+
+        <form id="form-registro" novalidate>
+            <div class="form-group">
+                <label for="nombre">Nombre Completo *</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ej. Ana García" required>
+                <span class="error-msg" id="err-nombre"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Correo Electrónico *</label>
+                <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+                <span class="error-msg" id="err-email"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="edad">Edad *</label>
+                <input type="number" id="edad" name="edad" min="1" placeholder="Ej. 21" required>
+                <span class="error-msg" id="err-edad"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="carrera">Carrera / Profesión *</label>
+                <input type="text" id="carrera" name="carrera" placeholder="Ej. Ingeniería en Sistemas" required>
+                <span class="error-msg" id="err-carrera"></span>
+            </div>
+
+            <div class="form-group">
+                <label>Género *</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="genero" value="Masculino"> Masculino</label>
+                    <label><input type="radio" name="genero" value="Femenino"> Femenino</label>
+                    <label><input type="radio" name="genero" value="Otro"> Otro</label>
+                </div>
+                <span class="error-msg" id="err-genero"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="intereses">Intereses de Aprendizaje</label>
+                <select id="intereses" name="intereses">
+                    <option value="">-- Selecciona una opción --</option>
+                    <option value="ia">Inteligencia Artificial</option>
+                    <option value="web">Desarrollo Web & Cloud</option>
+                    <option value="cyber">Ciberseguridad</option>
+                    <option value="data">Data Science</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="fecha">Fecha de Asistencia *</label>
+                <input type="date" id="fecha" name="fecha" required>
+                <span class="error-msg" id="err-fecha"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="comentarios">Comentarios</label>
+                <textarea id="comentarios" name="comentarios" rows="4" placeholder="¿Tienes alguna solicitud o consulta sobre el evento?"></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">Registrar Participante</button>
+        </form>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
